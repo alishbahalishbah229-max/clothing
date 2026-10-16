@@ -1,0 +1,1039 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f0e7">
+<meta name="description" content="ZARÉ — A contemporary Pakistani fashion house. Discover Eastern couture, modern silhouettes, bridal artistry and everyday luxury.">
+<title>ZARÉ — An Expression of Elegance</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ivory:#f6f0e7;
+  --paper:#eee5d8;
+  --wine:#541b2a;
+  --wine-dark:#32101b;
+  --gold:#aa8957;
+  --rose:#d6b4ad;
+  --ink:#251c1b;
+  --muted:#82756d;
+  --line:rgba(84,27,42,.19);
+  --serif:'Italiana','Playfair Display',Georgia,serif;
+  --body:'DM Sans',Arial,sans-serif;
+  --nav:74px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:13px;line-height:1.65;overflow-x:hidden}
+body.locked{overflow:hidden}
+button,input,select{font:inherit}
+button{color:inherit}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+::selection{background:var(--wine);color:var(--ivory)}
+::placeholder{color:#9b8e84}
+button{cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}
+.container{width:min(1440px,100% - 100px);margin-inline:auto}
+.eyebrow{font-size:9px;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+.serif{font-family:var(--serif);font-weight:400}
+.gold{color:var(--gold)}
+.wine{color:var(--wine)}
+.muted{color:var(--muted)}
+.section{padding:125px 0}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:46px}
+.section-heading h2{font:400 clamp(43px,6vw,76px)/.98 var(--serif);letter-spacing:-1.8px;margin:13px 0 0}
+.section-heading p{max-width:310px;color:var(--muted);font-size:11px}
+.kicker{display:flex;align-items:center;gap:12px;color:var(--gold)}
+.kicker:before{content:"";width:30px;height:1px;background:var(--gold)}
+.rule{height:1px;background:var(--line)}
+.small-link{display:inline-flex;gap:13px;align-items:center;border-bottom:1px solid var(--gold);padding:0 0 8px;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;transition:color .3s,border-color .3s}
+.small-link:hover{color:var(--gold)}
+.small-link span{font-size:16px;transition:transform .3s}
+.small-link:hover span{transform:translateX(5px)}
+.btn{border:1px solid transparent;padding:15px 24px;display:inline-flex;align-items:center;justify-content:center;gap:20px;font-size:10px;letter-spacing:1.6px;text-transform:uppercase;transition:background .35s,color .35s,border-color .35s,transform .35s}
+.btn-dark{background:var(--wine);color:var(--ivory)}
+.btn-dark:hover{background:var(--wine-dark);transform:translateY(-3px)}
+.btn-light{border-color:rgba(246,240,231,.65);color:var(--ivory)}
+.btn-light:hover{background:var(--ivory);color:var(--wine)}
+.btn-outline{border-color:var(--line)}
+.btn-outline:hover{border-color:var(--wine);color:var(--wine)}
+.icon-btn{position:relative;background:transparent;border:0;display:grid;place-items:center;min-width:36px;min-height:36px;padding:5px}
+.icon-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.count{position:absolute;top:0;right:-2px;display:grid;place-items:center;width:15px;height:15px;border-radius:50%;background:var(--wine);color:white;font-size:8px}
+.topline{height:29px;background:var(--wine-dark);color:#f4e9dc;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12px;font-size:9px;letter-spacing:2px}
+header{height:var(--nav);position:sticky;top:0;z-index:30;background:rgba(246,240,231,.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(84,27,42,.1)}
+.nav-inner{height:100%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px}
+.nav-left,.nav-right{display:flex;align-items:center;gap:24px}
+.nav-right{justify-content:flex-end}
+.nav-link{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;position:relative}
+.nav-link:after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--gold);transition:right .3s}
+.nav-link:hover:after{right:0}
+.logo{font:400 37px/.9 var(--serif);letter-spacing:8px;color:var(--wine);padding-left:8px}
+.logo-sub{display:block;text-align:center;font:500 7px var(--body);letter-spacing:4px;margin-top:7px;color:var(--gold)}
+.menu-toggle{display:none}
+.hero{min-height:min(820px,calc(100svh - 103px));height:760px;max-height:900px;position:relative;overflow:hidden;background:#31201f;color:var(--ivory)}
+.hero-photo{position:absolute;inset:0}
+.hero-photo img{object-position:center 38%;animation:heroZoom 18s ease-in-out infinite alternate;filter:brightness(.73) saturate(.77)}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(26,12,17,.77) 0%,rgba(26,12,17,.38) 44%,rgba(26,12,17,.05) 100%),linear-gradient(0deg,rgba(26,12,17,.5),transparent 36%)}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.09)}}
+.hero-content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:70px max(8%,calc((100% - 1250px)/2))}
+.hero-overline{display:flex;align-items:center;gap:13px;color:#e6cda8;animation:rise .9s .1s both}
+.hero-overline:before{content:"";width:36px;height:1px;background:var(--gold)}
+.hero h1{font:400 clamp(75px,12vw,165px)/.78 var(--serif);letter-spacing:-5px;margin:43px 0 30px;max-width:760px}
+.hero h1 span{display:block;animation:rise 1s both}
+.hero h1 span:nth-child(2){animation-delay:.2s;font-style:italic;padding-left:12vw;color:#e5cbb1}
+.hero-copy{max-width:350px;color:#e7dbd0;font-size:12px;line-height:1.9;margin:12px 0 32px;animation:rise 1s .35s both}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;animation:rise 1s .48s both}
+.hero-bottom{position:absolute;bottom:29px;left:5%;right:5%;z-index:2;display:flex;justify-content:space-between;align-items:end}
+.hero-index{font:italic 16px var(--serif);color:#e3c8a4}
+.scroll-cue{display:flex;align-items:center;gap:12px;font-size:8px;letter-spacing:2px;text-transform:uppercase}
+.scroll-line{width:54px;height:1px;background:rgba(246,240,231,.45);position:relative;overflow:hidden}
+.scroll-line:after{content:"";position:absolute;inset:0;background:var(--gold);animation:lineTravel 2s infinite}
+@keyframes lineTravel{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.hero-wordmark{position:absolute;z-index:1;right:3%;bottom:0;font:400 clamp(100px,20vw,270px)/.8 var(--serif);letter-spacing:-10px;color:rgba(246,240,231,.08);pointer-events:none}
+.marquee{overflow:hidden;border-bottom:1px solid var(--line);background:var(--paper)}
+.marquee-track{display:flex;width:max-content;animation:marquee 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-item{display:flex;align-items:center;gap:30px;padding:18px 26px;font:italic 20px var(--serif);color:var(--wine);white-space:nowrap}
+.marquee-item b{color:var(--gold);font:normal 11px var(--body)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.intro{display:grid;grid-template-columns:.85fr 1.15fr;gap:11%;align-items:center}
+.intro-note{padding-left:18px;border-left:1px solid var(--gold);color:var(--muted);font-size:11px;letter-spacing:1px;margin:28px 0 0}
+.intro h2{font:400 clamp(47px,6vw,84px)/.99 var(--serif);letter-spacing:-1.5px;margin:20px 0 26px}
+.intro h2 em{color:var(--wine);font-weight:400}
+.intro-right{display:grid;grid-template-columns:1fr .72fr;gap:22px;align-items:center}
+.intro-img{height:390px;overflow:hidden}
+.intro-img img{transition:transform 1s}
+.intro-img:hover img{transform:scale(1.045)}
+.intro-img.secondary{height:270px;margin-top:90px}
+.intro-right p{grid-column:1/-1;max-width:410px;color:var(--muted);font-size:11px;margin:0 0 0 auto}
+.collections{background:#ede3d7}
+.collection-grid{display:grid;grid-template-columns:1.08fr .92fr 1fr;gap:17px;align-items:start}
+.collection-card{position:relative;overflow:hidden;min-width:0;background:#ddd0c4}
+.collection-card:nth-child(2){margin-top:75px}
+.collection-card:nth-child(3){margin-top:25px}
+.collection-image{height:430px;position:relative;overflow:hidden}
+.collection-card:nth-child(2) .collection-image{height:350px}
+.collection-card:nth-child(3) .collection-image{height:465px}
+.collection-image:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(24,10,14,.5))}
+.collection-image img{transition:transform 1.1s cubic-bezier(.2,.7,.2,1),filter .5s;filter:saturate(.82)}
+.collection-card:hover .collection-image img{transform:scale(1.065);filter:saturate(1)}
+.collection-number{position:absolute;z-index:2;top:16px;left:17px;color:white;font:italic 15px var(--serif)}
+.collection-info{position:absolute;z-index:2;bottom:20px;left:22px;right:22px;color:white;display:flex;justify-content:space-between;align-items:end}
+.collection-info h3{font:400 clamp(29px,3.5vw,43px)/1 var(--serif);margin:7px 0}
+.collection-info p{margin:0;font-size:9px;letter-spacing:1px;color:#f1dfd0}
+.collection-arrow{border:1px solid rgba(255,255,255,.6);width:39px;height:39px;display:grid;place-items:center;transition:background .3s,color .3s}
+.collection-card:hover .collection-arrow{background:var(--ivory);color:var(--wine)}
+.collection-foot{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:35px}
+.collection-foot p{max-width:410px;color:var(--muted);font-size:11px}
+.categories{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 29px}
+.chip{border:1px solid var(--line);background:transparent;padding:10px 15px;font-size:9px;letter-spacing:1px;text-transform:uppercase;transition:all .25s}
+.chip:hover,.chip.active{background:var(--wine);color:var(--ivory);border-color:var(--wine)}
+.shop-tools{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:28px}
+.shop-tools p{margin:0;color:var(--muted);font-size:10px}
+.sort-select{border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);padding:10px 22px 10px 4px;font-size:10px}
+.search-wrap{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--line);max-width:230px}
+.search-wrap input{width:100%;border:0;background:transparent;padding:10px 2px;outline:none;font-size:10px}
+.search-wrap svg{width:16px;stroke:var(--wine);fill:none;stroke-width:1.5}
+.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:38px 17px}
+.product-card{min-width:0;position:relative}
+.product-image{position:relative;overflow:hidden;background:#e5d8ca;aspect-ratio:3/4}
+.product-image img{transition:transform .8s cubic-bezier(.2,.7,.2,1),opacity .5s}
+.product-card:hover .product-image img{transform:scale(1.045)}
+.product-label{position:absolute;top:12px;left:12px;z-index:2;background:var(--ivory);padding:6px 9px;font-size:8px;letter-spacing:1px;text-transform:uppercase}
+.fav-btn{position:absolute;right:10px;top:9px;z-index:3;background:rgba(246,240,231,.85);border:0;width:32px;height:32px;display:grid;place-items:center;font-size:19px;color:var(--wine);transition:background .25s}
+.fav-btn.active{background:var(--wine);color:white}
+.product-quick{position:absolute;z-index:2;bottom:0;left:0;right:0;padding:12px;background:rgba(246,240,231,.96);border:0;font-size:9px;letter-spacing:1.6px;text-transform:uppercase;transform:translateY(105%);transition:transform .35s}
+.product-card:hover .product-quick,.product-card:focus-within .product-quick{transform:translateY(0)}
+.product-details{padding:15px 1px 0}
+.product-meta{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.product-name{font:400 22px/1.15 var(--serif);margin:0 0 8px}
+.product-category{font-size:8px;text-transform:uppercase;letter-spacing:1.3px;color:var(--muted)}
+.product-price{font-size:11px;white-space:nowrap;color:var(--wine);font-weight:600}
+.product-desc{font-size:10px;color:var(--muted);margin:0}
+.no-results{grid-column:1/-1;padding:70px 20px;text-align:center;border:1px solid var(--line)}
+.no-results h3{font:400 38px var(--serif)}
+.load-note{font-size:10px;color:var(--muted);margin-top:30px}
+.campaign{background:var(--wine-dark);color:var(--ivory);overflow:hidden}
+.campaign-layout{display:grid;grid-template-columns:1fr 1fr;min-height:670px}
+.campaign-visual{position:relative;overflow:hidden;min-height:550px}
+.campaign-visual img{position:absolute;inset:0;transition:transform 1.3s}
+.campaign-visual:hover img{transform:scale(1.045)}
+.campaign-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,7,11,.3),transparent 50%)}
+.campaign-stamp{position:absolute;z-index:2;left:28px;bottom:25px;font-size:9px;letter-spacing:3px;text-transform:uppercase}
+.campaign-copy{padding:80px clamp(35px,8vw,115px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.campaign-copy h2{font:400 clamp(55px,7vw,100px)/.9 var(--serif);letter-spacing:-2px;margin:30px 0}
+.campaign-copy h2 em{color:#d4b68c}
+.campaign-copy p{max-width:340px;color:#d9c6bd;font-size:11px;line-height:2;margin-bottom:30px}
+.campaign-number{font:italic 18px var(--serif);color:var(--gold)}
+.craft-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.craft-item{border-top:1px solid var(--gold);padding-top:22px}
+.craft-item .number{font:italic 18px var(--serif);color:var(--gold)}
+.craft-item h3{font:400 28px var(--serif);margin:20px 0 12px}
+.craft-item p{color:var(--muted);font-size:11px;max-width:300px}
+.craft-bottom{margin-top:65px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.craft-bottom img{height:320px}
+.craft-bottom h3{font:400 clamp(36px,5vw,60px)/1 var(--serif);margin:15px 0}
+.craft-bottom p{color:var(--muted);max-width:400px;font-size:11px}
+.newsletter{background:#e8d8d0;padding:85px 0}
+.newsletter-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.newsletter h2{font:400 clamp(45px,6vw,70px)/.95 var(--serif);margin:15px 0}
+.newsletter p{font-size:11px;color:#74615b;max-width:390px}
+.newsletter-form{display:flex;border-bottom:1px solid var(--wine);gap:12px}
+.newsletter-form input{min-width:0;flex:1;border:0;background:transparent;padding:15px 0;font-size:11px;outline:none}
+.newsletter-form button{border:0;background:transparent;color:var(--wine);font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+.form-message{font-size:10px;margin-top:10px;min-height:16px}
+footer{background:#241619;color:#eee2d5;padding:65px 0 22px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:45px;padding-bottom:55px}
+.footer-logo{font:400 47px var(--serif);letter-spacing:8px}
+.footer-about{max-width:250px;color:#bca9a2;font-size:11px;margin-top:20px}
+.footer-heading{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#d1b38a;margin-bottom:20px}
+.footer-links{display:grid;gap:11px;color:#c6b7b0;font-size:10px}
+.footer-links a:hover{color:white}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.13);padding-top:20px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#ad9b95;font-size:9px}
+.footer-social{display:flex;gap:20px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.12s}.reveal-delay-2{transition-delay:.24s}.reveal-delay-3{transition-delay:.36s}
+.parallax{will-change:transform}
+.toast{position:fixed;z-index:80;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--wine-dark);color:var(--ivory);padding:14px 22px;font-size:10px;letter-spacing:.5px;transition:all .3s;max-width:calc(100% - 30px);text-align:center}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.overlay{position:fixed;inset:0;background:rgba(27,12,17,.53);z-index:50;opacity:0;pointer-events:none;transition:opacity .35s}
+.overlay.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;z-index:51;top:0;right:0;width:min(460px,100%);height:100dvh;background:var(--ivory);transform:translateX(105%);transition:transform .4s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column}
+.drawer.open{transform:translateX(0)}
+.drawer-head{padding:24px 26px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line)}
+.drawer-head h2{font:400 34px var(--serif);margin:0}
+.drawer-content{padding:20px 26px;overflow:auto;flex:1}
+.drawer-empty{padding:70px 0;text-align:center}
+.drawer-empty h3{font:400 33px var(--serif)}
+.bag-item{display:grid;grid-template-columns:92px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.bag-image{height:118px;background:var(--paper)}
+.bag-name{font:400 20px var(--serif);line-height:1.1;margin:4px 0}
+.bag-sub{font-size:10px;color:var(--muted);margin:6px 0}
+.bag-price{font-size:11px;color:var(--wine)}
+.qty{display:flex;align-items:center;border:1px solid var(--line);width:max-content;margin-top:11px}
+.qty button{background:transparent;border:0;width:27px;height:26px}
+.qty span{min-width:23px;text-align:center;font-size:10px}
+.remove-btn{background:transparent;border:0;text-decoration:underline;color:var(--muted);font-size:9px;padding:4px}
+.drawer-foot{padding:20px 26px 26px;border-top:1px solid var(--line)}
+.total-row{display:flex;justify-content:space-between;margin-bottom:14px;font-size:12px}
+.demo-note{color:var(--muted);font-size:9px;line-height:1.7;margin:12px 0}
+.full-btn{width:100%}
+.modal-wrap{position:fixed;z-index:60;inset:0;display:grid;place-items:center;padding:18px;opacity:0;pointer-events:none;transition:opacity .3s}
+.modal-wrap.open{opacity:1;pointer-events:auto}
+.modal{position:relative;background:var(--ivory);width:min(780px,100%);max-height:92dvh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;transform:translateY(15px);transition:transform .3s}
+.modal-wrap.open .modal{transform:translateY(0)}
+.modal-image{min-height:490px;background:var(--paper)}
+.modal-info{padding:40px 32px;display:flex;flex-direction:column;justify-content:center}
+.modal-close{position:absolute;z-index:3;right:10px;top:10px;background:var(--ivory);border:0;width:37px;height:37px;font-size:22px}
+.modal-info h2{font:400 39px/1 var(--serif);margin:14px 0}
+.modal-price{color:var(--wine);font-weight:600}
+.modal-desc{font-size:11px;color:var(--muted);line-height:1.9}
+.size-label{display:flex;justify-content:space-between;margin:22px 0 10px;font-size:9px;text-transform:uppercase;letter-spacing:1px}
+.sizes{display:flex;gap:7px;flex-wrap:wrap}
+.size-btn{width:39px;height:37px;border:1px solid var(--line);background:transparent;font-size:10px}
+.size-btn.selected,.size-btn:hover{background:var(--wine);color:white;border-color:var(--wine)}
+.modal-info .btn{margin-top:24px}
+.mobile-nav{display:none}
+
+@media(min-width:1500px){.hero-content{padding-left:max(8%,calc((100% - 1250px)/2))}}
+@media(max-width:1000px){
+  .container{width:calc(100% - 54px)}
+  .nav-left{gap:13px}.nav-link{font-size:8px;letter-spacing:1px}
+  .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .collection-image{height:370px}.collection-card:nth-child(3) .collection-image{height:400px}
+  .section{padding:95px 0}
+  .campaign-layout{min-height:580px}.campaign-copy{padding:55px 40px}
+  .footer-grid{grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+  .footer-grid>div:last-child{grid-column:2}
+}
+@media(max-width:700px){
+  :root{--nav:65px}
+  .container{width:calc(100% - 36px)}
+  .topline{height:26px;font-size:8px;letter-spacing:1.3px}
+  .nav-inner{grid-template-columns:40px 1fr 75px;gap:6px}
+  .menu-toggle{display:grid}
+  .nav-left{display:none}
+  .logo{justify-self:center;font-size:32px;letter-spacing:6px}
+  .logo-sub{font-size:6px;letter-spacing:3px}
+  .nav-right{gap:4px}
+  .nav-right .search-desktop{display:none}
+  .hero{height:calc(88svh - 26px);min-height:610px;max-height:820px}
+  .hero-photo img{object-position:59% center}
+  .hero-photo:after{background:linear-gradient(90deg,rgba(26,12,17,.72),rgba(26,12,17,.16)),linear-gradient(0deg,rgba(26,12,17,.5),transparent 45%)}
+  .hero-content{padding:50px 25px;justify-content:center}
+  .hero h1{font-size:clamp(72px,17vw,120px);letter-spacing:-3px;margin:37px 0 25px}
+  .hero h1 span:nth-child(2){padding-left:11vw}
+  .hero-copy{max-width:285px}
+  .hero-wordmark{font-size:33vw;letter-spacing:-6px}
+  .hero-bottom{left:20px;right:20px;bottom:21px}
+  .hero-index{font-size:13px}
+  .marquee-item{font-size:17px;padding:15px 19px}
+  .section{padding:76px 0}
+  .section-heading{align-items:start;flex-direction:column;gap:10px;margin-bottom:28px}
+  .section-heading h2{font-size:53px}
+  .section-heading p{margin:0}
+  .intro{grid-template-columns:1fr;gap:35px}
+  .intro h2{font-size:63px}
+  .intro-right{gap:12px}
+  .intro-img{height:310px}
+  .intro-img.secondary{height:220px;margin-top:65px}
+  .intro-right p{font-size:10px}
+  .collection-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .collection-card:nth-child(2){margin-top:40px}
+  .collection-card:nth-child(3){margin-top:0;grid-column:1/-1}
+  .collection-image,.collection-card:nth-child(2) .collection-image{height:300px}
+  .collection-card:nth-child(3) .collection-image{height:400px}
+  .collection-info{left:13px;right:13px;bottom:13px}
+  .collection-info h3{font-size:31px}
+  .collection-info p{font-size:8px}
+  .collection-arrow{width:32px;height:32px;flex-shrink:0}
+  .collection-foot{align-items:start;flex-direction:column;margin-top:24px;gap:10px}
+  .shop-tools{flex-wrap:wrap;align-items:center}
+  .search-wrap{max-width:100%;width:100%;order:3}
+  .categories{gap:7px}
+  .chip{padding:9px 11px;font-size:8px}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:29px 12px}
+  .product-name{font-size:20px}
+  .product-price{font-size:10px}
+  .product-details{padding-top:11px}
+  .product-quick{transform:none;background:rgba(246,240,231,.92);font-size:8px;padding:10px}
+  .campaign-layout{grid-template-columns:1fr}
+  .campaign-visual{min-height:460px}
+  .campaign-copy{padding:60px 28px 70px}
+  .campaign-copy h2{font-size:76px}
+  .craft-grid{grid-template-columns:1fr;gap:28px}
+  .craft-item{display:grid;grid-template-columns:36px 1fr;column-gap:12px}
+  .craft-item .number{grid-row:1/3}
+  .craft-item h3{margin:0 0 8px}
+  .craft-item p{margin:0}
+  .craft-bottom{grid-template-columns:1fr;gap:28px;margin-top:45px}
+  .craft-bottom img{height:290px}
+  .newsletter{padding:62px 0}
+  .newsletter-layout{grid-template-columns:1fr;gap:24px}
+  .newsletter h2{font-size:58px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:34px 22px}
+  .footer-grid>div:first-child{grid-column:1/-1}
+  .footer-grid>div:last-child{grid-column:auto}
+  .footer-logo{font-size:42px}
+  .footer-bottom{font-size:8px}
+  .modal{grid-template-columns:1fr;max-width:420px}
+  .modal-image{height:300px;min-height:300px}
+  .modal-info{padding:25px}
+  .modal-info h2{font-size:34px}
+  .mobile-nav{display:block;position:fixed;z-index:40;inset:0;background:var(--ivory);padding:25px;transform:translateX(-105%);transition:transform .35s}
+  .mobile-nav.open{transform:translateX(0)}
+  .mobile-nav-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:20px}
+  .mobile-nav-links{display:grid;gap:0;margin-top:24px}
+  .mobile-nav-links a{font:400 34px var(--serif);padding:14px 0;border-bottom:1px solid var(--line)}
+  .mobile-nav-foot{margin-top:28px;color:var(--muted);font-size:10px}
+}
+@media(max-width:380px){
+  .container{width:calc(100% - 28px)}
+  .hero h1{font-size:68px}
+  .collection-image,.collection-card:nth-child(2) .collection-image{height:255px}
+  .collection-info h3{font-size:26px}
+  .product-name{font-size:18px}
+  .product-meta{flex-direction:column;gap:3px}
+  .icon-btn{min-width:31px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+<div class="topline">A STUDY IN ELEGANCE &nbsp; · &nbsp; MADE WITH A PAKISTANI SOUL</div>
+
+<header>
+  <div class="container nav-inner">
+    <div class="nav-left">
+      <a class="nav-link" href="#collections">Collections</a>
+      <a class="nav-link" href="#shop">Shop</a>
+      <a class="nav-link" href="#atelier">Our atelier</a>
+    </div>
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <a class="logo" href="#home" aria-label="ZARÉ home">ZARÉ<span class="logo-sub">PAKISTANI COUTURE</span></a>
+    <div class="nav-right">
+      <button class="icon-btn search-desktop" id="focusSearch" aria-label="Search products">
+        <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <button class="icon-btn" id="openBag" aria-label="Open shopping bag">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span class="count" id="bagCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav-head">
+    <a class="logo" href="#home">ZARÉ<span class="logo-sub">PAKISTANI COUTURE</span></a>
+    <button class="icon-btn" id="closeMobile" aria-label="Close navigation">✕</button>
+  </div>
+  <div class="mobile-nav-links">
+    <a href="#collections">The collections ↗</a>
+    <a href="#shop">Discover the shop ↗</a>
+    <a href="#atelier">Our atelier ↗</a>
+    <a href="#journal">The ZARÉ story ↗</a>
+  </div>
+  <div class="mobile-nav-foot">TIMELESS DESIGN. A DISTINCTIVE HERITAGE.</div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-photo">
+    <img data-fallback="hero" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2200&q=90" alt="Fashion editorial portrait in warm cinematic light">
+  </div>
+  <div class="hero-content">
+    <div class="eyebrow hero-overline">THE AUTUMN / WINTER EDITION · 2026</div>
+    <h1><span>Wear</span><span>your story.</span></h1>
+    <p class="hero-copy">Rooted in heritage. Designed for the woman who writes her own rules. Discover a new expression of Pakistani luxury.</p>
+    <div class="hero-actions">
+      <a href="#shop" class="btn btn-light">Explore the collection <span>↗</span></a>
+      <a href="#atelier" class="btn btn-light">Our philosophy</a>
+    </div>
+  </div>
+  <div class="hero-wordmark" aria-hidden="true">ZARÉ</div>
+  <div class="hero-bottom">
+    <div class="hero-index">01 <span style="color:#a88b6b">/</span> 04</div>
+    <div class="scroll-cue"><span>Scroll to discover</span><span class="scroll-line"></span></div>
+    <div class="eyebrow" style="color:#e6cda8">CRAFTED IN PAKISTAN</div>
+  </div>
+</section>
+
+<div class="marquee" aria-label="ZARÉ design philosophy">
+  <div class="marquee-track">
+    <div class="marquee-item">Modern heritage <b>✳</b> Quiet luxury <b>✳</b> The art of dressing <b>✳</b> Made with meaning <b>✳</b> Modern heritage <b>✳</b></div>
+    <div class="marquee-item" aria-hidden="true">Modern heritage <b>✳</b> Quiet luxury <b>✳</b> The art of dressing <b>✳</b> Made with meaning <b>✳</b> Modern heritage <b>✳</b></div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container intro">
+    <div class="reveal">
+      <div class="eyebrow kicker">A DIFFERENT KIND OF LUXURY</div>
+      <h2>Elegance,<br>with a <em>point of view.</em></h2>
+      <a class="small-link" href="#atelier">Discover our world <span>↗</span></a>
+      <p class="intro-note">A contemporary wardrobe inspired by the richness of our heritage and the freedom of modern expression.</p>
+    </div>
+    <div class="intro-right reveal reveal-delay-1">
+      <div class="intro-img">
+        <img data-fallback="editorial" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Editorial fashion portrait">
+      </div>
+      <div class="intro-img secondary">
+        <img data-fallback="editorial2" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=85" alt="Contemporary fashion styling">
+      </div>
+      <p>From the first sketch to the final detail, every piece is an invitation to express who you are — beautifully, unapologetically.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section collections" id="collections">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div><div class="eyebrow kicker">CURATED FOR YOUR MANY WORLDS</div><h2>The collections.</h2></div>
+      <p>Different moods, different moments. One distinctive point of view.</p>
+    </div>
+    <div class="collection-grid">
+      <a class="collection-card reveal" href="#shop" data-jump-category="Eastern">
+        <div class="collection-image">
+          <img data-fallback="collection1" src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85" alt="Eastern inspired fashion collection">
+          <span class="collection-number">01 / EASTERN</span>
+          <div class="collection-info"><div><p>HERITAGE REIMAGINED</p><h3>Eastern soul.</h3></div><span class="collection-arrow">↗</span></div>
+        </div>
+      </a>
+      <a class="collection-card reveal reveal-delay-1" href="#shop" data-jump-category="Western">
+        <div class="collection-image">
+          <img data-fallback="collection2" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85" alt="Modern western fashion">
+          <span class="collection-number">02 / WESTERN</span>
+          <div class="collection-info"><div><p>THE NEW SILHOUETTE</p><h3>Modern muse.</h3></div><span class="collection-arrow">↗</span></div>
+        </div>
+      </a>
+      <a class="collection-card reveal reveal-delay-2" href="#shop" data-jump-category="Bridal">
+        <div class="collection-image">
+          <img data-fallback="collection3" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=1000&q=85" alt="Elegant formal occasion wear">
+          <span class="collection-number">03 / OCCASION</span>
+          <div class="collection-info"><div><p>FOR THE UNFORGETTABLE</p><h3>Made for moments.</h3></div><span class="collection-arrow">↗</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="collection-foot reveal">
+      <p>From everyday essentials to heirloom-worthy occasionwear, find the pieces that feel unmistakably yours.</p>
+      <a class="small-link" href="#shop">Explore every collection <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div><div class="eyebrow kicker">THE ZARÉ WARDROBE</div><h2>Pieces to keep.</h2></div>
+      <p>Considered silhouettes. Expressive details. Designed to live beyond a season.</p>
+    </div>
+
+    <div class="categories reveal" id="categoryFilters" aria-label="Filter products by category">
+      <button class="chip active" data-category="All" aria-pressed="true">All pieces</button>
+      <button class="chip" data-category="Eastern" aria-pressed="false">Eastern</button>
+      <button class="chip" data-category="Western" aria-pressed="false">Western</button>
+      <button class="chip" data-category="Casuals" aria-pressed="false">Casuals</button>
+      <button class="chip" data-category="Co-ords" aria-pressed="false">Co-ords</button>
+      <button class="chip" data-category="Shorts" aria-pressed="false">Shorts</button>
+      <button class="chip" data-category="Bridal" aria-pressed="false">Bridal</button>
+      <button class="chip" data-category="Formals" aria-pressed="false">Formals</button>
+      <button class="chip" data-category="Sarees" aria-pressed="false">Sarees</button>
+      <button class="chip" data-category="Shoes" aria-pressed="false">Shoes</button>
+      <button class="chip" data-category="Accessories" aria-pressed="false">Accessories</button>
+    </div>
+
+    <div class="shop-tools">
+      <p id="resultCount" aria-live="polite">Discover the collection</p>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+        <input id="searchInput" type="search" placeholder="Search the collection..." aria-label="Search products">
+      </div>
+      <label class="eyebrow" for="sortSelect">SORT BY
+        <select class="sort-select" id="sortSelect">
+          <option value="featured">Curated selection</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+          <option value="az">Name: A–Z</option>
+        </select>
+      </label>
+    </div>
+    <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    <p class="load-note">A curated preview of ZARÉ. Product availability, delivery and checkout are demonstrative until connected to a real store.</p>
+  </div>
+</section>
+
+<section class="campaign" id="journal">
+  <div class="campaign-layout">
+    <div class="campaign-visual reveal">
+      <img data-fallback="campaign" src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=1200&q=90" alt="Statement evening fashion editorial">
+      <div class="campaign-stamp">THE OCCASION EDIT · VOL. 01</div>
+    </div>
+    <div class="campaign-copy reveal reveal-delay-1">
+      <div class="eyebrow kicker">A LITTLE MORE EXTRAORDINARY</div>
+      <div class="campaign-number">No. 01 — 2026</div>
+      <h2>For the<br>moments<br><em>that matter.</em></h2>
+      <p>Celebrations deserve their own language. Discover expressive formals, intricate occasionwear and thoughtful details for the moments you will carry with you.</p>
+      <a class="btn btn-light" href="#shop" data-campaign-link="Formals">Explore occasionwear <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="atelier">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div><div class="eyebrow kicker">OUR DESIGN PHILOSOPHY</div><h2>Beautifully considered.</h2></div>
+      <p>Luxury is not about having more. It is about choosing with intention.</p>
+    </div>
+    <div class="craft-grid">
+      <article class="craft-item reveal"><div class="number">01</div><h3>Heritage, reimagined.</h3><p>Inspired by the colours, craft and cultural richness of Pakistan, translated into a contemporary visual language.</p></article>
+      <article class="craft-item reveal reveal-delay-1"><div class="number">02</div><h3>Details with purpose.</h3><p>Thoughtful silhouettes, considered styling and finishing touches that let the wearer take centre stage.</p></article>
+      <article class="craft-item reveal reveal-delay-2"><div class="number">03</div><h3>Your own signature.</h3><p>Pieces for women who move between tradition and modernity without needing to choose just one.</p></article>
+    </div>
+    <div class="craft-bottom reveal">
+      <img data-fallback="atelier" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85" alt="Thoughtfully curated clothing and textures">
+      <div><div class="eyebrow kicker">THE ZARÉ PERSPECTIVE</div><h3>Wear what<br>moves you.</h3><p>We believe personal style is a story that keeps evolving. ZARÉ brings Eastern elegance and Western ease together in a wardrobe that feels expressive, versatile and entirely your own.</p><a class="small-link" href="#shop">Find your next favourite <span>↗</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container newsletter-layout">
+    <div class="reveal"><div class="eyebrow kicker">A NOTE FROM ZARÉ</div><h2>Stay in the know.</h2><p>New collections, styling stories and little things worth discovering. A considered note, now and then.</p></div>
+    <div class="reveal reveal-delay-1">
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Your email address" required>
+        <button type="submit">Join the list ↗</button>
+      </form>
+      <div class="form-message" id="newsletterMessage" aria-live="polite">By joining, you agree to receive ZARÉ updates. This demo does not send or store your email.</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="#home" class="footer-logo">ZARÉ</a><p class="footer-about">Contemporary Pakistani fashion, designed with intention. Eastern roots, modern expression, a world of your own.</p></div>
+      <div><div class="footer-heading">Explore</div><div class="footer-links"><a href="#collections">Collections</a><a href="#shop">Shop all</a><a href="#atelier">Our philosophy</a><a href="#journal">Occasion edit</a></div></div>
+      <div><div class="footer-heading">Discover</div><div class="footer-links"><a href="#shop" data-footer-category="Bridal">Bridal edit</a><a href="#shop" data-footer-category="Formals">Luxury formals</a><a href="#shop" data-footer-category="Western">Western wear</a><a href="#shop" data-footer-category="Accessories">Accessories</a></div></div>
+      <div><div class="footer-heading">Get in touch</div><div class="footer-links"><a href="#newsletterForm">Join our mailing list</a><a href="#shop">Product enquiries</a><span>Pakistan</span><span>Online boutique preview</span></div></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> ZARÉ. ALL RIGHTS RESERVED.</span><span>DESIGNED WITH INTENTION · PAKISTAN</span><div class="footer-social"><a href="#home">INSTAGRAM</a><a href="#home">PINTEREST</a></div></div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="bagDrawer" role="dialog" aria-modal="true" aria-label="Shopping bag">
+  <div class="drawer-head"><h2>Your bag <span class="muted" id="bagTitleCount" style="font:400 15px var(--body)">(0)</span></h2><button class="icon-btn" id="closeBag" aria-label="Close shopping bag">✕</button></div>
+  <div class="drawer-content" id="bagItems"></div>
+  <div class="drawer-foot" id="bagFooter">
+    <div class="total-row"><span>Subtotal</span><strong id="bagSubtotal">Rs. 0</strong></div>
+    <div class="demo-note">Demo checkout only. No payment will be taken and no order will be submitted. Shipping and taxes are not calculated.</div>
+    <button class="btn btn-dark full-btn" id="checkoutButton">Continue to demo checkout ↗</button>
+  </div>
+</aside>
+
+<div class="modal-wrap" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+  <div class="modal">
+    <button class="modal-close" id="closeModal" aria-label="Close product details">✕</button>
+    <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+    <div class="modal-info">
+      <div class="eyebrow kicker" id="modalCategory"></div>
+      <h2 id="modalName"></h2>
+      <div class="modal-price" id="modalPrice"></div>
+      <p class="modal-desc" id="modalDescription"></p>
+      <div class="size-label"><span>Select size</span><span class="muted">Size guide: XS–XL</span></div>
+      <div class="sizes" id="modalSizes" role="group" aria-label="Choose size"></div>
+      <button class="btn btn-dark full-btn" id="addToBagButton">Add to bag — <span id="modalButtonPrice"></span></button>
+      <p class="demo-note">This is a boutique preview. Size and availability are illustrative.</p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+
+  const $ = (s, root = document) => root.querySelector(s);
+  const $$ = (s, root = document) => [...root.querySelectorAll(s)];
+
+  const image = (id, width = 800) =>
+    `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
+
+  const products = [
+    {id:1,name:"Mehr Embroidered Kurta",category:"Eastern",price:12500,label:"Signature",desc:"An elegant kurta silhouette with intricate-inspired detailing and a refined, easy drape.",img:"photo-1610030469983-98e550d6193c"},
+    {id:2,name:"Noor Bridal Ensemble",category:"Bridal",price:89500,label:"Occasion",desc:"A statement bridal-inspired ensemble for celebrations that deserve a little more magic.",img:"photo-1595777457583-95e059d581b8"},
+    {id:3,name:"The Sienna Co-ord",category:"Co-ords",price:9800,label:"New season",desc:"A coordinated two-piece look designed to move effortlessly from day to evening.",img:"photo-1483985988355-763728e1935b"},
+    {id:4,name:"Ayla Evening Saree",category:"Sarees",price:24500,label:"Limited edit",desc:"An elegant occasion silhouette with a fluid drape and understated glamour.",img:"photo-1539008835657-9e8e9680c956"},
+    {id:5,name:"Mira Everyday Shirt",category:"Casuals",price:4900,label:"Everyday",desc:"A relaxed wardrobe staple with a clean silhouette and endlessly wearable styling.",img:"photo-1483985988355-763728e1935b"},
+    {id:6,name:"The Muse Blazer",category:"Western",price:14500,label:"Modern classic",desc:"Sharp lines meet understated polish in this versatile contemporary layer.",img:"photo-1539109136881-3be0616acf4b"},
+    {id:7,name:"Rosewater Formal",category:"Formals",price:36500,label:"Occasion",desc:"Soft colour, a graceful silhouette and an elevated eveningwear mood.",img:"photo-1534528741775-53994a69daeb"},
+    {id:8,name:"The Weekend Short",category:"Shorts",price:3900,label:"Off-duty",desc:"An easy warm-weather essential made for relaxed, considered everyday styling.",img:"photo-1515886657613-9f3515b0c78f"},
+    {id:9,name:"Zeenat Festive Set",category:"Eastern",price:18900,label:"Festive",desc:"A festive-ready look inspired by the beauty of traditional dressing.",img:"photo-1610030469983-98e550d6193c"},
+    {id:10,name:"Ivory Studio Set",category:"Co-ords",price:11200,label:"Modern essential",desc:"Minimal, versatile and designed to work beautifully as a set or separately.",img:"photo-1529139574466-a303027c1d8b"},
+    {id:11,name:"The Heirloom Khussa",category:"Shoes",price:4200,label:"Craft edit",desc:"A traditional-inspired footwear statement to complete your Eastern look.",img:"photo-1543163521-1bf539c55dd2"},
+    {id:12,name:"Gul Rose Clutch",category:"Accessories",price:6500,label:"Finishing touch",desc:"A polished occasion accessory to bring a thoughtful finishing touch to your outfit.",img:"photo-1584917865442-de89df76afd3"},
+    {id:13,name:"Sahar Luxury Formal",category:"Formals",price:42500,label:"Atelier edit",desc:"A sophisticated formalwear statement for intimate gatherings and grand occasions.",img:"photo-1566174053879-31528523f8ae"},
+    {id:14,name:"The City Trouser",category:"Western",price:7200,label:"Wardrobe staple",desc:"A tailored everyday essential with clean lines and effortless versatility.",img:"photo-1483985988355-763728e1935b"},
+    {id:15,name:"Gulnaar Bridal Set",category:"Bridal",price:112000,label:"Bridal edit",desc:"An opulent bridal-inspired statement celebrating the drama of a special occasion.",img:"photo-1595777457583-95e059d581b8"},
+    {id:16,name:"The Evening Heel",category:"Shoes",price:7800,label:"After dark",desc:"An elegant finishing touch for dinners, festivities and evening celebrations.",img:"photo-1543163521-1bf539c55dd2"},
+    {id:17,name:"Safa Draped Saree",category:"Sarees",price:27900,label:"Signature",desc:"A graceful draped silhouette for a timeless occasion look.",img:"photo-1539008835657-9e8e9680c956"},
+    {id:18,name:"The Everyday Tote",category:"Accessories",price:5900,label:"Daily companion",desc:"A practical, polished accessory for days that move at their own pace.",img:"photo-1584917865442-de89df76afd3"},
+    {id:19,name:"Linen Day Shirt",category:"Casuals",price:4500,label:"Easy living",desc:"A relaxed everyday piece with a light, versatile feel.",img:"photo-1515886657613-9f3515b0c78f"},
+    {id:20,name:"The Weekend Short Set",category:"Shorts",price:6200,label:"Weekend",desc:"A casual warm-weather pairing for laid-back days and spontaneous plans.",img:"photo-1529139574466-a303027c1d8b"}
+  ];
+
+  const fallbackImages = {
+    hero:"photo-1539109136881-3be0616acf4b",
+    editorial:"photo-1534528741775-53994a69daeb",
+    editorial2:"photo-1529139574466-a303027c1d8b",
+    collection1:"photo-1610030469983-98e550d6193c",
+    collection2:"photo-1483985988355-763728e1935b",
+    collection3:"photo-1595777457583-95e059d581b8",
+    campaign:"photo-1539008835657-9e8e9680c956",
+    atelier:"photo-1490481651871-ab68de25d43d"
+  };
+
+  function productImage(p, width = 800) {
+    return image(p.img, width);
+  }
+
+  function formatPrice(n) {
+    return "Rs. " + Number(n).toLocaleString("en-PK");
+  }
+
+  function safeRead(key, fallback) {
+    try {
+      const value = localStorage.getItem(key);
+      return value ? JSON.parse(value) : fallback;
+    } catch {
+      return fallback;
+    }
+  }
+
+  let bag = safeRead("zare-demo-bag-v2", []);
+  let favourites = safeRead("zare-demo-favourites-v2", []);
+  if (!Array.isArray(bag)) bag = [];
+  if (!Array.isArray(favourites)) favourites = [];
+
+  let activeCategory = "All";
+  let selectedProduct = null;
+  let selectedSize = "";
+  let toastTimer;
+
+  function persist() {
+    try {
+      localStorage.setItem("zare-demo-bag-v2", JSON.stringify(bag));
+      localStorage.setItem("zare-demo-favourites-v2", JSON.stringify(favourites));
+    } catch {
+      showToast("Your browser could not save changes for the next visit.");
+    }
+  }
+
+  function showToast(message) {
+    const toast = $("#toast");
+    toast.textContent = message;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 2800);
+  }
+
+  function revealNewElements() {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced || !("IntersectionObserver" in window)) {
+      $$(".reveal").forEach(el => el.classList.add("visible"));
+      return;
+    }
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12});
+    $$(".reveal:not(.visible)").forEach(el => observer.observe(el));
+  }
+
+  function renderProducts() {
+    const query = $("#searchInput").value.trim().toLowerCase();
+    let list = products.filter(p => {
+      const categoryMatch = activeCategory === "All" || p.category === activeCategory;
+      const textMatch = `${p.name} ${p.category} ${p.label} ${p.desc}`.toLowerCase().includes(query);
+      return categoryMatch && textMatch;
+    });
+
+    const sort = $("#sortSelect").value;
+    if (sort === "low") list.sort((a,b) => a.price-b.price);
+    if (sort === "high") list.sort((a,b) => b.price-a.price);
+    if (sort === "az") list.sort((a,b) => a.name.localeCompare(b.name));
+
+    $("#resultCount").textContent = `${list.length} ${list.length === 1 ? "piece" : "pieces"} to discover`;
+
+    const grid = $("#productGrid");
+    if (!list.length) {
+      grid.innerHTML = `<div class="no-results"><div class="eyebrow gold">NOT FOUND IN THIS EDIT</div><h3>A different kind of discovery.</h3><p class="muted">Try another search or explore the complete collection.</p><button class="btn btn-outline" id="resetFilters">View all pieces</button></div>`;
+      $("#resetFilters").addEventListener("click", () => {
+        activeCategory = "All";
+        $("#searchInput").value = "";
+        $("#categoryFilters").querySelectorAll(".chip").forEach(b => {
+          const active = b.dataset.category === "All";
+          b.classList.toggle("active", active);
+          b.setAttribute("aria-pressed", String(active));
+        });
+        renderProducts();
+      });
+      return;
+    }
+
+    grid.innerHTML = list.map((p, i) => `
+      <article class="product-card reveal ${i % 4 === 1 ? "reveal-delay-1" : i % 4 === 2 ? "reveal-delay-2" : ""}">
+        <div class="product-image">
+          <img loading="lazy" src="${productImage(p)}" alt="${p.name}" data-product-image="${p.id}">
+          <span class="product-label">${p.label}</span>
+          <button class="fav-btn ${favourites.includes(p.id) ? "active" : ""}" data-fav="${p.id}" aria-label="${favourites.includes(p.id) ? "Remove from" : "Add to"} favourites" aria-pressed="${favourites.includes(p.id)}">${favourites.includes(p.id) ? "♥" : "♡"}</button>
+          <button class="product-quick" data-quick="${p.id}">Discover this piece ↗</button>
+        </div>
+        <div class="product-details">
+          <div class="product-meta"><div><h3 class="product-name">${p.name}</h3><div class="product-category">${p.category}</div></div><div class="product-price">${formatPrice(p.price)}</div></div>
+          <p class="product-desc">${p.desc}</p>
+        </div>
+      </article>
+    `).join("");
+
+    grid.querySelectorAll("[data-fav]").forEach(btn => btn.addEventListener("click", () => toggleFavourite(Number(btn.dataset.fav))));
+    grid.querySelectorAll("[data-quick]").forEach(btn => btn.addEventListener("click", () => openProduct(Number(btn.dataset.quick))));
+    grid.querySelectorAll("img[data-product-image]").forEach(img => {
+      img.addEventListener("error", () => {
+        if (img.dataset.triedFallback) return;
+        img.dataset.triedFallback = "1";
+        img.src = image("photo-1529139574466-a303027c1d8b", 700);
+      }, {once:true});
+    });
+    revealNewElements();
+  }
+
+  function toggleFavourite(id) {
+    if (favourites.includes(id)) {
+      favourites = favourites.filter(x => x !== id);
+      showToast("Removed from your favourites.");
+    } else {
+      favourites.push(id);
+      showToast("Saved to your favourites.");
+    }
+    persist();
+    renderProducts();
+  }
+
+  function openProduct(id) {
+    selectedProduct = products.find(p => p.id === id);
+    if (!selectedProduct) return;
+    selectedSize = "";
+    $("#modalImage").src = productImage(selectedProduct, 900);
+    $("#modalImage").alt = selectedProduct.name;
+    $("#modalCategory").textContent = selectedProduct.category + " / " + selectedProduct.label;
+    $("#modalName").textContent = selectedProduct.name;
+    $("#modalPrice").textContent = formatPrice(selectedProduct.price);
+    $("#modalDescription").textContent = selectedProduct.desc;
+    $("#modalButtonPrice").textContent = formatPrice(selectedProduct.price);
+    $("#modalSizes").innerHTML = "";
+    const sizes = ["XS","S","M","L","XL"];
+    const needsSize = !["Shoes","Accessories"].includes(selectedProduct.category);
+    (needsSize ? sizes : ["One size"]).forEach(size => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "size-btn";
+      btn.textContent = size;
+      btn.addEventListener("click", () => {
+        selectedSize = size;
+        $$(".size-btn", $("#modalSizes")).forEach(b => b.classList.toggle("selected", b === btn));
+      });
+      $("#modalSizes").appendChild(btn);
+    });
+    $("#productModal").classList.add("open");
+    $("#overlay").classList.add("open");
+    document.body.classList.add("locked");
+    $("#closeModal").focus();
+  }
+
+  function closeProduct() {
+    $("#productModal").classList.remove("open");
+    if (!$("#bagDrawer").classList.contains("open") && !$("#mobileNav").classList.contains("open")) {
+      $("#overlay").classList.remove("open");
+      document.body.classList.remove("locked");
+    }
+  }
+
+  function addToBag(id, size) {
+    const product = products.find(p => p.id === id);
+    if (!product) return;
+    const existing = bag.find(item => item.id === id && item.size === size);
+    if (existing) existing.qty += 1;
+    else bag.push({id, size, qty:1});
+    persist();
+    renderBag();
+    showToast(`${product.name} added to your bag.`);
+  }
+
+  function bagCount() {
+    return bag.reduce((sum, item) => sum + item.qty, 0);
+  }
+
+  function renderBag() {
+    const count = bagCount();
+    $("#bagCount").textContent = count > 99 ? "99+" : count;
+    $("#bagTitleCount").textContent = `(${count})`;
+    const content = $("#bagItems");
+
+    if (!bag.length) {
+      content.innerHTML = `<div class="drawer-empty"><div class="eyebrow gold">A LITTLE SPACE FOR SOMETHING LOVELY</div><h3>Your bag is waiting.</h3><p class="muted">Discover a piece that feels like you.</p><button class="btn btn-dark" id="discoverFromBag">Explore the collection ↗</button></div>`;
+      $("#discoverFromBag").addEventListener("click", () => {
+        closeBag();
+        $("#shop").scrollIntoView({behavior:"smooth"});
+      });
+      $("#bagSubtotal").textContent = formatPrice(0);
+      $("#checkoutButton").disabled = true;
+      return;
+    }
+
+    $("#checkoutButton").disabled = false;
+    let total = 0;
+    content.innerHTML = bag.map((item, index) => {
+      const p = products.find(product => product.id === item.id);
+      if (!p) return "";
+      total += p.price * item.qty;
+      return `<div class="bag-item">
+        <div class="bag-image"><img src="${productImage(p, 300)}" alt="${p.name}" loading="lazy"></div>
+        <div><div class="eyebrow gold">${p.category}</div><div class="bag-name">${p.name}</div><div class="bag-sub">Size: ${item.size}</div><div class="bag-price">${formatPrice(p.price)}</div>
+          <div class="qty" aria-label="Quantity controls"><button data-qty="${index}" data-delta="-1" aria-label="Decrease quantity">−</button><span>${item.qty}</span><button data-qty="${index}" data-delta="1" aria-label="Increase quantity">+</button></div>
+        </div>
+        <button class="remove-btn" data-remove="${index}" aria-label="Remove ${p.name}">Remove</button>
+      </div>`;
+    }).join("");
+    $("#bagSubtotal").textContent = formatPrice(total);
+
+    content.querySelectorAll("[data-qty]").forEach(btn => btn.addEventListener("click", () => {
+      const index = Number(btn.dataset.qty);
+      const delta = Number(btn.dataset.delta);
+      if (!bag[index]) return;
+      bag[index].qty += delta;
+      if (bag[index].qty <= 0) bag.splice(index,1);
+      persist();
+      renderBag();
+    }));
+    content.querySelectorAll("[data-remove]").forEach(btn => btn.addEventListener("click", () => {
+      bag.splice(Number(btn.dataset.remove),1);
+      persist();
+      renderBag();
+      showToast("Item removed from your bag.");
+    }));
+  }
+
+  function openBag() {
+    closeProduct();
+    $("#bagDrawer").classList.add("open");
+    $("#overlay").classList.add("open");
+    document.body.classList.add("locked");
+    $("#closeBag").focus();
+  }
+
+  function closeBag() {
+    $("#bagDrawer").classList.remove("open");
+    if (!$("#productModal").classList.contains("open") && !$("#mobileNav").classList.contains("open")) {
+      $("#overlay").classList.remove("open");
+      document.body.classList.remove("locked");
+    }
+  }
+
+  function closeMobile() {
+    $("#mobileNav").classList.remove("open");
+    $("#menuToggle").setAttribute("aria-expanded","false");
+    if (!$("#productModal").classList.contains("open") && !$("#bagDrawer").classList.contains("open")) {
+      $("#overlay").classList.remove("open");
+      document.body.classList.remove("locked");
+    }
+  }
+
+  function setCategory(category) {
+    activeCategory = category;
+    $("#categoryFilters").querySelectorAll(".chip").forEach(btn => {
+      const active = btn.dataset.category === category;
+      btn.classList.toggle("active", active);
+      btn.setAttribute("aria-pressed", String(active));
+    });
+    renderProducts();
+  }
+
+  $("#categoryFilters").addEventListener("click", e => {
+    const btn = e.target.closest("[data-category]");
+    if (btn) setCategory(btn.dataset.category);
+  });
+
+  $("#searchInput").addEventListener("input", renderProducts);
+  $("#sortSelect").addEventListener("change", renderProducts);
+  $("#focusSearch").addEventListener("click", () => {
+    $("#shop").scrollIntoView({behavior:"smooth"});
+    setTimeout(() => $("#searchInput").focus(), 450);
+  });
+
+  $$("[data-jump-category]").forEach(link => link.addEventListener("click", () => {
+    setCategory(link.dataset.jumpCategory);
+  }));
+  $$("[data-campaign-link]").forEach(link => link.addEventListener("click", () => {
+    setCategory(link.dataset.campaignLink);
+  }));
+  $$("[data-footer-category]").forEach(link => link.addEventListener("click", () => {
+    setCategory(link.dataset.footerCategory);
+  }));
+
+  $("#addToBagButton").addEventListener("click", () => {
+    if (!selectedProduct) return;
+    const needsSize = !["Shoes","Accessories"].includes(selectedProduct.category);
+    if (!selectedSize) {
+      showToast(needsSize ? "Please select a size first." : "Please select an option first.");
+      return;
+    }
+    addToBag(selectedProduct.id, selectedSize);
+    closeProduct();
+    openBag();
+  });
+
+  $("#openBag").addEventListener("click", openBag);
+  $("#closeBag").addEventListener("click", closeBag);
+  $("#closeModal").addEventListener("click", closeProduct);
+  $("#overlay").addEventListener("click", () => {
+    closeProduct();
+    closeBag();
+    closeMobile();
+  });
+  $("#productModal").addEventListener("click", e => {
+    if (e.target === $("#productModal")) closeProduct();
+  });
+
+  $("#menuToggle").addEventListener("click", () => {
+    $("#mobileNav").classList.add("open");
+    $("#menuToggle").setAttribute("aria-expanded","true");
+    $("#overlay").classList.add("open");
+    document.body.classList.add("locked");
+    $("#closeMobile").focus();
+  });
+  $("#closeMobile").addEventListener("click", closeMobile);
+  $$(".mobile-nav-links a").forEach(a => a.addEventListener("click", closeMobile));
+
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+      closeProduct();
+      closeBag();
+      closeMobile();
+    }
+  });
+
+  $("#checkoutButton").addEventListener("click", () => {
+    if (!bag.length) return;
+    showToast("Demo only: connect a secure checkout provider to accept real orders or payments.");
+  });
+
+  $("#newsletterForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const email = $("#newsletterEmail").value.trim();
+    if (!email) return;
+    $("#newsletterMessage").textContent = "Thank you for your interest in ZARÉ. This demo has not sent or stored your email.";
+    $("#newsletterEmail").value = "";
+  });
+
+  // Graceful fallback for unavailable editorial photography.
+  $$("img[data-fallback]").forEach(img => {
+    img.addEventListener("error", () => {
+      if (img.dataset.fallbackTried) return;
+      img.dataset.fallbackTried = "1";
+      const key = img.dataset.fallback;
+      img.src = image(fallbackImages[key] || "photo-1529139574466-a303027c1d8b", 1000);
+    });
+  });
+
+  // Subtle pointer parallax, disabled for touch and reduced-motion preferences.
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion && window.matchMedia("(pointer:fine)").matches) {
+    let scheduled = false;
+    window.addEventListener("scroll", () => {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        const heroImage = $(".hero-photo img");
+        if (heroImage && y < window.innerHeight * 1.3) {
+          heroImage.style.objectPosition = `center calc(38% + ${Math.min(y * .08, 55)}px)`;
+        }
+        scheduled = false;
+      });
+    }, {passive:true});
+  }
+
+  $("#year").textContent = new Date().getFullYear();
+  renderProducts();
+  renderBag();
+  revealNewElements();
+})();
+</script>
+</body>
+</html>
